@@ -6,7 +6,6 @@ date:       2018-05-30
 author:     "Ljan"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - Jekky
     - Mardown
 ---
 
