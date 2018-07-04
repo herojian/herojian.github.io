@@ -4,9 +4,9 @@ title:      "使用Github Pages建独立博客"
 subtitle:   "Github Pages，使用它可以很方便的建立自己的独立博客，并且免费"
 date:       2018-05-30
 author:     "Ljan"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/post-bg-kuaidi.jpg"
 tags:
-	- GitHubPages
+    - GitHub Pages
 ---
 
 > 原作者beiyuu.com的博客，搭建github pages 时参考了一下，写的挺详细，保留了，并在此向原作者表示感谢
