@@ -1,12 +1,12 @@
 ---
 layout:     post
-title:      "使用Github Pages建独立博客"
-subtitle:   "Github Pages，使用它可以很方便的建立自己的独立博客，并且免费"
-date:       2018-05-30
+title:      "Maven的几个要素22222"
+subtitle:   "ONOS开发过程中的归纳笔记"
+date:       2018-06-24
 author:     "Ljan"
-header-img: "img/post-bg-js-version.jpg"
+header-img: "img/post-bg-js-module.jpg"
 tags:
-	- GitHubPages
+    - Maven
 ---
 
 ### 原作者beiyuu.com的博客，搭建github pages时参考了一下，写的挺详细，保留了，并在此向原作者表示感谢
