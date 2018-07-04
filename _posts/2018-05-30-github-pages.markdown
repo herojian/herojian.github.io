@@ -6,8 +6,7 @@ date:       2018-05-30
 author:     "Ljan"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - Jekky
-	- GitHub
+	- GitHub Pages
 ---
 
 ### 原作者beiyuu.com的博客，搭建github pages时参考了一下，写的挺详细，保留了，并在此向原作者表示感谢

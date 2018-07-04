@@ -6,7 +6,7 @@ date:       2018-05-30
 author:     "Ljan"
 header-img: "img/post-bg-js-version.jpg"
 tags:
-    - Mardown
+    - GitHub Pages
 ---
 
 >We believe that writing is about content, about what you want to say – not about fancy formatting.

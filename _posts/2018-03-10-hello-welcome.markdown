@@ -6,7 +6,7 @@ date:       2018-03-10 12:00:00
 author:     "Ljan"
 header-img: "img/post-bg-2015.jpg"
 tags:
-    - 生活
+    - Life
 ---
 
 > “Yeah It's on. ”
