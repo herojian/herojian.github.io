@@ -25,16 +25,11 @@ Maven是一个Java项目管理工具，主要用于项目构建、依赖管理�
 ### 坐标和依赖
 
 * 坐标 (groupId/artifactId/version) 表示包在本地仓库中的位置（目录）
-gourpId 公司域名反写+项目名，如 com.herojian.l3networking
+gourpId 公司域名反写+项目名，如 com.herojian.l3networking;  artifactId 项目名-模块名，如 l3networking-l3route ; version 版本号，SNAPSHOT表示不稳定的快照版本
 
-artifactId 项目名-模块名，如 l3networking-l3route
+* \<dependences\>...\<\/dependences\> Maven项目依赖的包的位置，由(groupId/artifactId/version)元组构成
 
-version 版本号，SNAPSHOT表示不稳定的快照版本
-
-* \<dependences\>...\<\/dependences\>
-Maven项目依赖的包的位置，由(groupId/artifactId/version)元组构成
-
-\<scope\>...\<\/scope\> 依赖范围，有测试、编译、运行三种
+* \<scope\>...\<\/scope\> 依赖范围，有测试、编译、运行三种
 
 ### 生命周期和插件
 maven项目的三个周期：clean+default+site
