@@ -22,11 +22,11 @@ tags:
 **解析：首先面对4的倍数的人则输掉比赛**
 	
 ```	 
-	class Solution {
-		public boolean canWinNim(int n) {
-			return (n-1)%4==0 ? true :
-				(n-2)%4==0 ? true :
-				(n-3)%4==0 ? true : false;        
-		}    
-	}
+class Solution {
+	public boolean canWinNim(int n) {
+		return (n-1)%4==0 ? true :
+			(n-2)%4==0 ? true :
+			(n-3)%4==0 ? true : false;        
+	}    
+}
 ```
