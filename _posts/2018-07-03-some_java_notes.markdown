@@ -6,7 +6,7 @@ date:       2018-07-3
 author:     "Ljan"
 header-img: "img/post-bg-unix-linux.jpg"
 tags:
-    - Diary
+    - Java
 ---
 
 > This document is not completed and will be updated anytime.

@@ -63,12 +63,12 @@ tags:
 * 行内式：只要在方块括号后面紧接着圆括号并插入网址链接即可，
   如果你还想要加上链接的 title 文字，只要在网址后面，用双引号把 title 文字包起来即可，例如：
   ```
-  [西卡西卡的博客](https://herojian.github.io)
-  [西卡西卡的博客](https://herojian.github.io, "Soaringsoul's Blog")
+  [西卡西卡的博客](https://herojian.com)
+  [西卡西卡的博客](https://herojian.com, "Soaringsoul's Blog")
   ```
   效果如下：
-  [西卡西卡的博客](https://herojian.github.io)
-  [西卡西卡的博客](https://herojian.github.io "Soaringsoul's Blog")
+  [西卡西卡的博客](https://herojian.com)
+  [西卡西卡的博客](https://herojian.com, "Soaringsoul's Blog")
   也可以使用相对路径：
   eg:
   ```
@@ -86,13 +86,13 @@ tags:
     接着，在文件的任意处，你可以把这个标记的链接内容定义出来：eg:
     ```
     这是[西卡西卡][id]的博客
-    [id]: https://herojian.github.io  "西卡西卡的博客"
+    [id]: https://herojian.com "西卡西卡的博客"
     ```
       
     效果如下：
     这是[西卡西卡][id]的博客
     
-    [id]: https://herojian.github.io  "西卡西卡的博客"
+    [id]: https://herojian.com "西卡西卡的博客"
          
 ## 6.强调
 Markdown 使用星号\*和底线\_作为标记强调字词的符号，
