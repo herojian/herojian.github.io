@@ -8,6 +8,85 @@ header-img: "img/post-bg-re-vs-ng2.jpg"
 tags:
     - LeetCode
 ---
+### 654. 最大二叉树
+给定一个不含重复元素的整数数组。一个以此数组构建的最大二叉树定义如下：
+
+二叉树的根是数组中的最大元素。
+左子树是通过数组中最大值左边部分构造出的最大二叉树。
+右子树是通过数组中最大值右边部分构造出的最大二叉树。
+通过给定的数组构建最大二叉树，并且输出这个树的根节点。
+Example 1:
+```
+输入: [3,2,1,6,0,5]
+输入: 返回下面这棵树的根节点：
+
+      6
+    /   \
+   3     5
+    \    / 
+     2  0   
+       \
+        1
+```
+注意:给定的数组的大小在 [1, 1000] 之间。
+**解析：二叉树的题目基本通过迭代法都能求解**
+```
+class Solution {
+    public TreeNode constructMaximumBinaryTree(int[] nums) {
+        if (nums == null) return null;
+        int index = getMaxIndex(nums);
+        int maxValue = nums[index];
+
+        TreeNode root = new TreeNode(maxValue);
+
+        if (index != nums.length-1){
+            int[] rightNums = getRightNums(nums, index);
+            root.right = constructMaximumBinaryTree(rightNums);
+        }else{
+            root.right = null;
+        }
+
+        if (index != 0){
+            int[] leftNums = getLeftNums(nums, index);
+            root.left = constructMaximumBinaryTree(leftNums);
+        }else{
+            root.left = null;
+        }
+        return root;
+    }
+
+    /*获取数组中的最大值*/
+    private int getMaxIndex(int[] nums){
+        int maxValue = 0, index = 0;
+        for (int k = 0; k<nums.length; k++){
+            if (nums[k] > maxValue) {
+                maxValue = nums[k];
+                index = k;
+            }
+        }
+        return index;
+    }
+
+    /*获取左边数组*/
+    private int[] getLeftNums(int[] nums, int index){
+        int newNums[] = new int[index];
+        for (int i = 0; i<index; i++){
+            newNums[i] = nums[i];
+        }
+        return newNums;
+    }
+
+    /*获取右边数组*/
+    private int[] getRightNums(int[] nums, int index){
+        int newNums[] = new int[nums.length-index-1];
+        for (int i = 0; i<nums.length-index-1.;i++){
+            newNums[i]=nums[i+index+1];
+        }
+        return newNums;
+    }
+
+}
+```
 
 ### 292. Nim游戏
 你和你的朋友，两个人一起玩 Nim游戏：桌子上有一堆石头，每次你们轮流拿掉 1 - 3 块石头。 拿掉最后一块石头的人就是获胜者。你作为先手。
@@ -19,7 +98,7 @@ tags:
 解释: 如果堆中有 4 块石头，那么你永远不会赢得比赛；
      因为无论你拿走 1 块、2 块 还是 3 块石头，最后一块石头总是会被你的朋友拿走。
 ```
-**解析：首先面对4的倍数的人则输掉比赛**
+**解析：首先面对4或4的倍数的人则输掉比赛,所以尽量使得自己拿一次后对手面对4或4的倍数**
 	
 ```	 
 class Solution {
