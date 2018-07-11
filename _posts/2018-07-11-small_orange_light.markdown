@@ -1,7 +1,7 @@
 ---
 layout:     post
-title:      "Welcome to Ljan Blog"
-subtitle:   " \"Hello World, Hello Blog\""
+title:      "小橘灯"
+subtitle:   " "
 date:       2018-07-11 12:00:00
 author:     "Ljan"
 header-img: "img/contact-bg.jpg"
@@ -35,7 +35,7 @@ tags:
 
 但是从那时起，每逢春节，我就想起那盏小橘灯。十二年过去了，那小姑娘的爸爸一定早回来了。她妈妈也一定好了吧？因为我们“大家”都“好”了！
 
->       --冰心 《小橘灯》
+**--冰心**
 
 
 
